@@ -11,9 +11,9 @@ function Home() {
 
   const loadData = async () => {
     let foodCategoryRes = await axios.get(
-      "http://localhost:5000/food/allCategory"
+      "https://friggy-node.onrender.com/food/allCategory"
     );
-    let foodItemRes = await axios.get("http://localhost:5000/food/allFood");
+    let foodItemRes = await axios.get("https://friggy-node.onrender.com/food/allFood");
     setFoodCat(foodCategoryRes.data);
     setFoodItem(foodItemRes.data);
   };

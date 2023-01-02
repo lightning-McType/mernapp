@@ -14,7 +14,7 @@ function Cart() {
   }
   const handleCheckout = async () => {
     const userEmail = localStorage.getItem("userEmail");
-    const res = await axios.post("http://localhost:5000/order", {
+    const res = await axios.post("https://friggy-node.onrender.com/order", {
       foodOrder: cart,
       email: userEmail,
       orderDate: new Date().toLocaleDateString(),

@@ -13,7 +13,7 @@ function Signup() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("http://localhost:5000/user/createUser", {
+      const res = await axios.post("https://friggy-node.onrender.com/user/createUser", {
         name: credentials.name,
         email: credentials.email,
         password: credentials.password,

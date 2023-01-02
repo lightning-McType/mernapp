@@ -6,7 +6,7 @@ import Navbar from "../components/Navbar";
 function MyOrder() {
   const [orderData, setOrderData] = useState("");
   const fetchMyOrder = async () => {
-    const res = await axios.post("http://localhost:5000/order/myOrders", {
+    const res = await axios.post("https://friggy-node.onrender.com/order/myOrders", {
       email: localStorage.getItem("userEmail"),
     });
     setOrderData(res.data);

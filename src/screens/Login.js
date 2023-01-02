@@ -12,7 +12,7 @@ function Login() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("http://localhost:5000/user/loginUser", {
+      const res = await axios.post("https://friggy-node.onrender.com/user/loginUser", {
         email: credentials.email,
         password: credentials.password,
       });
